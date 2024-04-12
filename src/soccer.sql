@@ -121,6 +121,14 @@ CREATE TABLE officiators
         REFERENCES games(game_id)
 );
 
+INSERT INTO officiators
+    (referee_id, game_id)
+VALUES
+    (1, 1),
+    (2, 2),
+    (1, 3),
+    (2, 3);
+
 -- Goals
 CREATE TABLE goals
 (
